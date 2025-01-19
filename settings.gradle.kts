@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "HyosikSampleApp"
 include(":app")
- 
+include(":testmodule")
+project(":testmodule").projectDir = file("testmodule/app")

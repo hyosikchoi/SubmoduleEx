@@ -12,10 +12,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.hyosik.hyosiksampleapp.ui.theme.HyosikSampleAppTheme
+import com.hyosik.submoduleex.Test
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Test.test(this, "서브모듈 성공!")
         enableEdgeToEdge()
         setContent {
             HyosikSampleAppTheme {
